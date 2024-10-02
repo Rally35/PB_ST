@@ -5,7 +5,7 @@ import shutil, pathlib, os
 import yaml
 
 # Load keys from YAML file
-with open("Project/keys.yaml", 'r') as file:
+with open("Project/keys_2.yaml", 'r') as file:
     config = yaml.safe_load(file)
 
 # Access keys
@@ -44,8 +44,8 @@ newapi = tweepy.Client(
 api = tweepy.API(auth)
 
 # adding the tweet content in a multiline string. The {mydays} part is updated dynamically as the number of days from 6th Nov, 2023
-sampletweet = f""" It's the first day for me learning Python through X.
-I will post more soon!!
+sampletweet = f""" It's the first one
+MDF!!!
 """
 
 # I add the screenshot in the same directory as the code and add only one image. Since it is a screenshot taken using windows Snip, it is in png
